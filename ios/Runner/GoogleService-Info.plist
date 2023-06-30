@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>256848572479-38jlsjecm9c9rsl4h9i4oihpr0c2qmnc.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.256848572479-38jlsjecm9c9rsl4h9i4oihpr0c2qmnc</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCJhVjvLOQiNV-60fqYQ-Jj7rl1I8nPNgc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>256848572479</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>br.com.aceleradordeecommerce.duraes</string>
+	<key>PROJECT_ID</key>
+	<string>duraes-bc9c7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>duraes-bc9c7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:256848572479:ios:49e3f5a30dd6eb29af888a</string>
+</dict>
+</plist>

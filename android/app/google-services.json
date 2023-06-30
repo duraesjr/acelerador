@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "256848572479",
+    "project_id": "duraes-bc9c7",
+    "storage_bucket": "duraes-bc9c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256848572479:android:dcc9a05ba44ed6d7af888a",
+        "android_client_info": {
+          "package_name": "br.com.aceleradordeecommerce.duraes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256848572479-o6foab0lf3qmmv7kmnc1ffjbjt7klco0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9imzYLIX4XQ1YiSCC0hKNDZGS0MrvJCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256848572479-o6foab0lf3qmmv7kmnc1ffjbjt7klco0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "256848572479-38jlsjecm9c9rsl4h9i4oihpr0c2qmnc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.aceleradordeecommerce.duraes"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
