@@ -40,9 +40,13 @@ dependencies:
   flutter_launcher_icons: ^0.13.1
   firebase_core: ^2.14.0
   firebase_auth: ^4.6.3
+  firebase_ui_auth: ^1.5.0
   firebase_messaging: ^14.6.4
   flutter_signin_button: ^2.0.0
   google_sign_in: ^6.1.0
+  firebase_ui_localizations: ^1.5.0
+  flutter_localization: ^0.1.12
+  firebase_database: ^10.2.3
 
 
 flutter_launcher_icons:
@@ -78,7 +82,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
      - assets/properties.json
-  #   - images/a_dot_ham.jpeg
+     - assets/images/flutterfire_logo.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
