@@ -45,8 +45,8 @@ dependencies:
   flutter_signin_button: ^2.0.0
   google_sign_in: ^6.1.0
   firebase_ui_localizations: ^1.5.0
-  flutter_localization: ^0.1.12
   firebase_database: ^10.2.3
+  fluttertoast: ^8.2.2
 
 
 flutter_launcher_icons:
@@ -73,7 +73,7 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
+  generate: true
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

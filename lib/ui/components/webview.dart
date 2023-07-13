@@ -11,13 +11,16 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:webview_flutter/webview_flutter.dart';
+
 // #docregion platform_imports
 // Import for Android features.
 import 'package:webview_flutter_android/webview_flutter_android.dart';
+
 // Import for iOS features.
 import 'package:webview_flutter_wkwebview/webview_flutter_wkwebview.dart';
 
 import '../../config/config.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 // #enddocregion platform_imports
 
@@ -88,7 +91,7 @@ class WebViewPowerBI extends StatefulWidget {
 class _WebViewPowerBIState extends State<WebViewPowerBI> {
   late final WebViewController _controller;
 
-  final String _urlLogin = Config.urlLogin;
+  String _urlLogin = Config.urlLogin;
 
   @override
   void initState() {
@@ -105,8 +108,31 @@ class _WebViewPowerBIState extends State<WebViewPowerBI> {
       params = const PlatformWebViewControllerCreationParams();
     }
 
+    //Emails vindos do firebase
+    if (Config.emailEstaNaLista(Config.emailUsuarioLogado) == false) {
+      /*
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+            content: Text(
+                "Email do usuário não cadastrado no sistema. Favor procurar administrador")),
+      );
+       */
+      //Navigator.of(context).pop();
+      Fluttertoast.showToast(
+          msg:
+              "Email do usuário não cadastrado no sistema. Favor procurar administrador",
+          toastLength: Toast.LENGTH_LONG,
+          gravity: ToastGravity.CENTER,
+          timeInSecForIosWeb: 30,
+          backgroundColor: Colors.red,
+          textColor: Colors.white,
+          fontSize: 16.0);
+    }
+
+    _urlLogin = Config.getUrlDoUsuario();
+
     final WebViewController controller =
-    WebViewController.fromPlatformCreationParams(params);
+        WebViewController.fromPlatformCreationParams(params);
     // #enddocregion platform_features
 
     controller
@@ -124,8 +150,7 @@ class _WebViewPowerBIState extends State<WebViewPowerBI> {
             debugPrint('Page finished loading: $url');
           },
           onWebResourceError: (WebResourceError error) {
-            debugPrint(
-            '''
+            debugPrint('''
                 Page resource error:
                 code: ${error.errorCode}
                 description: ${error.description}
@@ -138,7 +163,7 @@ class _WebViewPowerBIState extends State<WebViewPowerBI> {
               debugPrint('blocking navigation to ${request.url}');
               return NavigationDecision.prevent;
             }
-            if(request.url.contains('?action=logout')){
+            if (request.url.contains('?action=logout')) {
               debugPrint('bloqueando navegação  página sair ${request.url}');
               return NavigationDecision.prevent;
             }
@@ -203,7 +228,7 @@ class _WebViewPowerBIState extends State<WebViewPowerBI> {
     );
   }
 
-  /*
+/*
   Future<void> loadAsset(BuildContext context) async {
     final jsonString = await DefaultAssetBundle.of(context)
         .loadString('assets/properties.json');
@@ -211,7 +236,6 @@ class _WebViewPowerBIState extends State<WebViewPowerBI> {
     this._urlLogin = jsonMap['urlLogin'];
   }
   */
-
 }
 
 enum MenuOptions {
@@ -382,7 +406,7 @@ class SampleMenu extends StatelessWidget {
 
   Future<void> _onListCache() {
     return webViewController.runJavaScript('caches.keys()'
-    // ignore: missing_whitespace_between_adjacent_strings
+        // ignore: missing_whitespace_between_adjacent_strings
         '.then((cacheKeys) => JSON.stringify({"cacheKeys" : cacheKeys, "localStorage" : localStorage}))'
         '.then((caches) => Toaster.postMessage(caches))');
   }
@@ -465,7 +489,7 @@ class SampleMenu extends StatelessWidget {
     }
     final List<String> cookieList = cookies.split(';');
     final Iterable<Text> cookieWidgets =
-    cookieList.map((String cookie) => Text(cookie));
+        cookieList.map((String cookie) => Text(cookie));
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
       mainAxisSize: MainAxisSize.min,
