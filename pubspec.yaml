@@ -40,7 +40,7 @@ dependencies:
   flutter_launcher_icons: ^0.13.1
   firebase_core: ^2.14.0
   firebase_auth: ^4.6.3
-  firebase_ui_auth: ^1.5.0
+  firebase_ui_auth: ^1.6.2
   firebase_messaging: ^14.6.4
   flutter_signin_button: ^2.0.0
   google_sign_in: ^6.1.0
@@ -99,7 +99,7 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
+    # fonts:
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
@@ -113,3 +113,7 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: SocialIcons
+      fonts:
+        - asset: packages/firebase_ui_auth/fonts/SocialIcons.ttf
