@@ -83,7 +83,8 @@ class FirebaseAuthUIExample extends StatelessWidget {
                 if (!state.user!.emailVerified) {
                   Navigator.pushNamed(context, '/verify-email');
                 } else {
-                  Navigator.pushReplacementNamed(context, '/profile');
+                  //Navigator.pushReplacementNamed(context, '/profile');
+                  Navigator.pushReplacementNamed(context, '/powerbi');
                 }
               }),
               AuthStateChangeAction<UserCreated>((context, state) {
