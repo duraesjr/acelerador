@@ -47,6 +47,9 @@ dependencies:
   firebase_ui_localizations: ^1.5.0
   firebase_database: ^10.2.3
   fluttertoast: ^8.2.2
+  intl: any
+  flutter_localizations:
+    sdk: flutter
 
 
 flutter_launcher_icons:
@@ -83,6 +86,7 @@ flutter:
   assets:
      - assets/properties.json
      - assets/images/flutterfire_logo.png
+     - assets/images/image_launcher.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
