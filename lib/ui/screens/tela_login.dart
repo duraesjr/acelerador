@@ -109,8 +109,8 @@ class FirebaseAuthUIExample extends StatelessWidget {
             styles: const {
               EmailFormStyle(signInButtonVariant: ButtonVariant.filled),
             },
-            headerBuilder: headerImage('assets/images/image_launcher.png'),
-            sideBuilder: sideImage('assets/images/image_launcher.png'),
+            headerBuilder: headerImage('assets/images/image_launcher_fundo_totalmente_branco.png'),
+            sideBuilder: sideImage('assets/images/image_launcher_fundo_totalmente_branco.png'),
             subtitleBuilder: (context, action) {
               return Padding(
                 padding: const EdgeInsets.only(bottom: 8),
@@ -297,8 +297,8 @@ class FirebaseAuthUIExample extends StatelessWidget {
             styles: const {
               EmailFormStyle(signInButtonVariant: ButtonVariant.filled),
             },
-            headerBuilder: headerImage('assets/images/image_launcher.png'),
-            sideBuilder: sideImage('assets/images/image_launcher.png'),
+            headerBuilder: headerImage('assets/images/image_launcher_fundo_totalmente_branco.png'),
+            sideBuilder: sideImage('assets/images/image_launcher_fundo_totalmente_branco.png'),
             subtitleBuilder: (context, action) {
               return Padding(
                 padding: const EdgeInsets.only(bottom: 8),
