@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../components/webview.dart';
 
@@ -36,6 +37,16 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
       // called again, and so nothing would appear to happen.
       _counter++;
     });
+  }
+  @override
+  void dispose() {
+    FirebaseAuth.instance.authStateChanges().listen((User? user) async {
+      if (user != null) {
+        debugPrint('Deslogando o usuário');
+        FirebaseAuth.instance.signOut();
+      }
+    });
+    super.dispose();
   }
 
   @override
