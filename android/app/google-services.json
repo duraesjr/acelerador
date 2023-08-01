@@ -1,37 +1,38 @@
 {
   "project_info": {
-    "project_number": "256848572479",
-    "project_id": "duraes-bc9c7",
-    "storage_bucket": "duraes-bc9c7.appspot.com"
+    "project_number": "574732087732",
+    "firebase_url": "https://acelerador-de-ecommerce-default-rtdb.firebaseio.com",
+    "project_id": "acelerador-de-ecommerce",
+    "storage_bucket": "acelerador-de-ecommerce.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:256848572479:android:dcc9a05ba44ed6d7af888a",
+        "mobilesdk_app_id": "1:574732087732:android:6a458bd76b3ed503b382e1",
         "android_client_info": {
           "package_name": "br.com.aceleradordeecommerce.duraes"
         }
       },
       "oauth_client": [
         {
-          "client_id": "256848572479-o6foab0lf3qmmv7kmnc1ffjbjt7klco0.apps.googleusercontent.com",
+          "client_id": "574732087732-61r20bnvq1dnhj62mui5ls6ik3no40kl.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA9imzYLIX4XQ1YiSCC0hKNDZGS0MrvJCg"
+          "current_key": "AIzaSyA0HISiGyia9QpcBzw_0J2xosbk9G1PAIU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "256848572479-o6foab0lf3qmmv7kmnc1ffjbjt7klco0.apps.googleusercontent.com",
+              "client_id": "574732087732-61r20bnvq1dnhj62mui5ls6ik3no40kl.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "256848572479-38jlsjecm9c9rsl4h9i4oihpr0c2qmnc.apps.googleusercontent.com",
+              "client_id": "574732087732-a0q8e6gfbtunhp36k2bcvv2af1d9v96l.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
                 "bundle_id": "br.com.aceleradordeecommerce.duraes"

@@ -47,30 +47,33 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyA3fCU5dsWyQZcddYeLiZDEIB5ll2RWoeU',
-    appId: '1:256848572479:web:3dfbfa9abb5d4dfeaf888a',
-    messagingSenderId: '256848572479',
-    projectId: 'duraes-bc9c7',
-    authDomain: 'duraes-bc9c7.firebaseapp.com',
-    storageBucket: 'duraes-bc9c7.appspot.com',
-    measurementId: 'G-EHYTWJHRHR',
+      apiKey: 'AIzaSyDfuw8wJ0g3fAkOUm_TbwHBhp8d1MbhF7I',
+    appId: '1:574732087732:web:d51f97e486c7ff15b382e1',
+    messagingSenderId: '574732087732',
+    projectId: 'acelerador-de-ecommerce',
+    authDomain: 'acelerador-de-ecommerce.firebaseapp.com',
+    databaseURL: 'https://acelerador-de-ecommerce-default-rtdb.firebaseio.com',
+    storageBucket: 'acelerador-de-ecommerce.appspot.com',
+    measurementId: 'G-D1LTCGMW6J',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA9imzYLIX4XQ1YiSCC0hKNDZGS0MrvJCg',
-    appId: '1:256848572479:android:dcc9a05ba44ed6d7af888a',
-    messagingSenderId: '256848572479',
-    projectId: 'duraes-bc9c7',
-    storageBucket: 'duraes-bc9c7.appspot.com',
+    apiKey: 'AIzaSyA0HISiGyia9QpcBzw_0J2xosbk9G1PAIU',
+    appId: '1:574732087732:android:6a458bd76b3ed503b382e1',
+    messagingSenderId: '574732087732',
+    projectId: 'acelerador-de-ecommerce',
+    databaseURL: 'https://acelerador-de-ecommerce-default-rtdb.firebaseio.com',
+    storageBucket: 'acelerador-de-ecommerce.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCJhVjvLOQiNV-60fqYQ-Jj7rl1I8nPNgc',
-    appId: '1:256848572479:ios:49e3f5a30dd6eb29af888a',
-    messagingSenderId: '256848572479',
-    projectId: 'duraes-bc9c7',
-    storageBucket: 'duraes-bc9c7.appspot.com',
-    iosClientId: '256848572479-38jlsjecm9c9rsl4h9i4oihpr0c2qmnc.apps.googleusercontent.com',
+    apiKey: 'AIzaSyB2ISMTCSlleyosgi13La7P9TRaX8IpV-0',
+    appId: '1:574732087732:ios:9e18e1ba2a898aa7b382e1',
+    messagingSenderId: '574732087732',
+    projectId: 'acelerador-de-ecommerce',
+    databaseURL: 'https://acelerador-de-ecommerce-default-rtdb.firebaseio.com',
+    storageBucket: 'acelerador-de-ecommerce.appspot.com',
+    iosClientId: '574732087732-a0q8e6gfbtunhp36k2bcvv2af1d9v96l.apps.googleusercontent.com',
     iosBundleId: 'br.com.aceleradordeecommerce.duraes',
   );
 }
