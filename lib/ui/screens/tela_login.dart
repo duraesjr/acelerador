@@ -5,6 +5,7 @@ import 'package:duraes/config/rotulos.dart';
 import 'package:duraes/main.dart';
 import 'package:duraes/ui/components/decorations.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/foundation.dart';
@@ -33,6 +34,18 @@ class FirebaseAuthUIExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final buttonStyle = ButtonStyle(
+      backgroundColor: MaterialStateColor.resolveWith((states) => Colors.white70),
+      foregroundColor: MaterialStateColor.resolveWith((states) => Color(0xFF01579B)),
+      //foregroundColor: MaterialStateColor.resolveWith((states) => Color.fromRGBO(23, 86, 156, 0.5)),
+      padding: MaterialStateProperty.all(const EdgeInsets.all(12)),
+      shape: MaterialStateProperty.all(
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+      ),
+    );
+
+    final buttonStyle2 = ButtonStyle(
+      backgroundColor: MaterialStateColor.resolveWith((states) => Color.fromRGBO(23, 86, 156, 0.0)),
+      foregroundColor: MaterialStateColor.resolveWith((states) => Colors.white70),
       padding: MaterialStateProperty.all(const EdgeInsets.all(12)),
       shape: MaterialStateProperty.all(
         RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
@@ -54,14 +67,22 @@ class FirebaseAuthUIExample extends StatelessWidget {
 
     return MaterialApp(
       theme: ThemeData(
-        brightness: Brightness.light,
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          //brightness: Brightness.dark,
+          onSurfaceVariant: Colors.white70,
+          onSurface: Colors.white70,
+          primary: Colors.white70,
+          secondary: Colors.white70,
+          tertiary: Colors.white70,
+          background: Color.fromRGBO(23, 86, 156, 0.5)
+        ),
         visualDensity: VisualDensity.standard,
         useMaterial3: true,
         inputDecorationTheme: const InputDecorationTheme(
           border: OutlineInputBorder(),
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(style: buttonStyle),
-        textButtonTheme: TextButtonThemeData(style: buttonStyle),
+        textButtonTheme: TextButtonThemeData(style: buttonStyle2),
         outlinedButtonTheme: OutlinedButtonThemeData(style: buttonStyle),
       ),
       initialRoute: initialRoute,
@@ -109,12 +130,12 @@ class FirebaseAuthUIExample extends StatelessWidget {
             styles: const {
               EmailFormStyle(signInButtonVariant: ButtonVariant.filled),
             },
-            headerBuilder: headerImage('assets/images/image_launcher_fundo_totalmente_branco.png'),
-            sideBuilder: sideImage('assets/images/image_launcher_fundo_totalmente_branco.png'),
+            headerBuilder: headerImage('assets/images/logo_fundo_transparente.png'),
+            sideBuilder: sideImage('assets/images/logo_fundo_transparente.png'),
             subtitleBuilder: (context, action) {
               return Padding(
                 padding: const EdgeInsets.only(bottom: 8),
-                child: Text(
+                child: Text(style: TextStyle(color: Colors.white70),
                   action == AuthAction.signIn
                       ? 'Bem vindo ao Acelerador de Ecommerce!'
                       : 'Bem vindo ao Acelerador de Ecommerce! Por favor, crie um conta para continuar.',
@@ -254,8 +275,6 @@ class FirebaseAuthUIExample extends StatelessWidget {
           });
 
 
-          final platform = Theme.of(context).platform;
-
           return SignInScreen(
             actions: [
               ForgotPasswordAction((context, email) {
@@ -297,12 +316,12 @@ class FirebaseAuthUIExample extends StatelessWidget {
             styles: const {
               EmailFormStyle(signInButtonVariant: ButtonVariant.filled),
             },
-            headerBuilder: headerImage('assets/images/image_launcher_fundo_totalmente_branco.png'),
-            sideBuilder: sideImage('assets/images/image_launcher_fundo_totalmente_branco.png'),
+            headerBuilder: headerImage('assets/images/logo_fundo_transparente.png'),
+            sideBuilder: sideImage('assets/images/logo_fundo_transparente.png'),
             subtitleBuilder: (context, action) {
               return Padding(
                 padding: const EdgeInsets.only(bottom: 8),
-                child: Text(
+                child: Text(style: TextStyle(color: Colors.white70),
                   action == AuthAction.signIn
                       ? 'Bem vindo ao Acelerador de Ecommerce!'
                       : 'Bem vindo ao Acelerador de Ecommerce! Por favor, crie um conta para continuar.',
@@ -315,8 +334,8 @@ class FirebaseAuthUIExample extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 16),
                   child: Text(
                     action == AuthAction.signIn
-                        ? 'By signing in, you agree to our terms and conditions.'
-                        : 'By registering, you agree to our terms and conditions.',
+                        ? ''
+                        : '',
                     style: const TextStyle(color: Colors.grey),
                   ),
                 ),
@@ -335,7 +354,7 @@ class FirebaseAuthUIExample extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      supportedLocales: [
+      supportedLocales: const [
         Locale('en'),
         Locale('pt'),
       ],
@@ -352,7 +371,7 @@ class FirebaseAuthUIExample extends StatelessWidget {
 
       usuario = usuario.replaceAll("link: ", "\"link\": \"");
 
-      usuario = usuario.replaceAll(", email: ", "\",\"email\": \"");
+      usuario = usuario.replaceAll(", email: ", "\", \"email\": \"");
 
       usuario = usuario.replaceFirst("}", "\"}", usuario.length-5);
 

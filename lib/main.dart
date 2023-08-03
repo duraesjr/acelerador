@@ -39,7 +39,7 @@ Future<void> main() async {
 
   FirebaseUIAuth.configureProviders([
     EmailAuthProvider(),
-    emailLinkProviderConfig,
+    //emailLinkProviderConfig,
     //PhoneAuthProvider(),
     //GoogleProvider(clientId: GOOGLE_CLIENT_ID),
     //AppleProvider(),

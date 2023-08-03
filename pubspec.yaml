@@ -88,6 +88,8 @@ flutter:
      - assets/images/flutterfire_logo.png
      - assets/images/image_launcher.png
      - assets/images/image_launcher_fundo_totalmente_branco.png
+     - assets/images/image_launcher_escuro.png
+     - assets/images/logo_fundo_transparente.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
