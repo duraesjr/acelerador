@@ -73,7 +73,7 @@ class FirebaseAuthUIExample extends StatelessWidget {
           onSurface: Colors.white70,
           primary: Colors.white70,
           secondary: Colors.white70,
-          tertiary: Colors.white70,
+          //tertiary: Colors.white70,
           background: Color.fromRGBO(23, 86, 156, 0.5)
         ),
         visualDensity: VisualDensity.standard,
@@ -369,11 +369,13 @@ class FirebaseAuthUIExample extends StatelessWidget {
     valores.forEach((key, value) {
       usuario = value.toString();
 
-      usuario = usuario.replaceAll("link: ", "\"link\": \"");
+      usuario = usuario.replaceAll("email: ", "\"email\": \"");
 
-      usuario = usuario.replaceAll(", email: ", "\", \"email\": \"");
+      usuario = usuario.replaceAll("link: ", " \"link\": \"");
 
-      usuario = usuario.replaceFirst("}", "\"}", usuario.length-5);
+      usuario = usuario.replaceFirst(",", "\",");
+
+      usuario = usuario.replaceFirst("}", "\"}");
 
       lista.add(json.decode(usuario));
     });
