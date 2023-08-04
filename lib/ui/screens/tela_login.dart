@@ -264,7 +264,7 @@ class FirebaseAuthUIExample extends StatelessWidget {
               Map<dynamic, dynamic> valores =
               snaphot.value as Map<dynamic, dynamic>;
 
-              List<dynamic> lista = tratandoDados(valores);
+              List<dynamic> lista = tratarDados(valores);
 
               Config.setListaEmails(lista);
 
@@ -361,7 +361,7 @@ class FirebaseAuthUIExample extends StatelessWidget {
     );
   }
 
-  List<dynamic> tratandoDados(Map<dynamic, dynamic> valores) {
+  List<dynamic> tratarDados(Map<dynamic, dynamic> valores) {
     String usuario = "";
 
     List<dynamic> lista = List.empty(growable: true);
