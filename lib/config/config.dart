@@ -22,7 +22,7 @@ class Config {
 
   static void setListaEmails(List<dynamic> lista) {
     listaEmailsLinks.addAll(lista);
-    print(listaEmailsLinks);
+    //print(listaEmailsLinks);
   }
 
   static List<dynamic> getListaEmails(){
