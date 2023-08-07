@@ -110,14 +110,6 @@ class _WebViewPowerBIState extends State<WebViewPowerBI> {
 
     //Emails vindos do firebase
     if (Config.emailEstaNaLista(Config.emailUsuarioLogado) == false) {
-      /*
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-            content: Text(
-                "Email do usuário não cadastrado no sistema. Favor procurar administrador")),
-      );
-       */
-      //Navigator.of(context).pop();
       Fluttertoast.showToast(
           msg:
               "Email do usuário não cadastrado no sistema. Favor procurar administrador",

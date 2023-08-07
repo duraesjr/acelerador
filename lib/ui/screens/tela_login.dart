@@ -76,7 +76,7 @@ class FirebaseAuthUIExample extends StatelessWidget {
           onSurface: Colors.white70,
           primary: Colors.white70,
           secondary: Colors.white70,
-          //tertiary: Colors.white70,
+          tertiary: Colors.white70,
           background: Color.fromRGBO(23, 86, 156, 0.5)
         ),
         visualDensity: VisualDensity.standard,
