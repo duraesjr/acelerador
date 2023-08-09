@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "574732087732-3rqnt3thfjsp59cgu96r647rqfmujqfb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.aceleradordeecommerce.duraes",
+            "certificate_hash": "c97b90a7c982d02610c54abc2b4a509051a8e9e2"
+          }
+        },
+        {
           "client_id": "574732087732-61r20bnvq1dnhj62mui5ls6ik3no40kl.apps.googleusercontent.com",
           "client_type": 3
         }

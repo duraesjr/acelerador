@@ -47,7 +47,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-      apiKey: 'AIzaSyDfuw8wJ0g3fAkOUm_TbwHBhp8d1MbhF7I',
+    apiKey: 'AIzaSyDfuw8wJ0g3fAkOUm_TbwHBhp8d1MbhF7I',
     appId: '1:574732087732:web:d51f97e486c7ff15b382e1',
     messagingSenderId: '574732087732',
     projectId: 'acelerador-de-ecommerce',
@@ -73,6 +73,7 @@ class DefaultFirebaseOptions {
     projectId: 'acelerador-de-ecommerce',
     databaseURL: 'https://acelerador-de-ecommerce-default-rtdb.firebaseio.com',
     storageBucket: 'acelerador-de-ecommerce.appspot.com',
+    androidClientId: '574732087732-3rqnt3thfjsp59cgu96r647rqfmujqfb.apps.googleusercontent.com',
     iosClientId: '574732087732-a0q8e6gfbtunhp36k2bcvv2af1d9v96l.apps.googleusercontent.com',
     iosBundleId: 'br.com.aceleradordeecommerce.duraes',
   );
