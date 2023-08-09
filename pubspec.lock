@@ -114,7 +114,7 @@ packages:
     source: hosted
     version: "0.0.13"
   email_validator:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: email_validator
       sha256: e9a90f27ab2b915a27d7f9c2a7ddda5dd752d6942616ee83529b686fc086221b
@@ -210,7 +210,7 @@ packages:
     source: hosted
     version: "0.2.3+4"
   firebase_dynamic_links:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: firebase_dynamic_links
       sha256: "4872f4d7e94736041398bc3490c2ddd87ee159d6b051ba01ca2708e5260a7ebe"
@@ -266,7 +266,7 @@ packages:
     source: hosted
     version: "1.5.0"
   firebase_ui_oauth:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: firebase_ui_oauth
       sha256: "2cbe5a8996134f1a57205a5ebfa5863c5d599c03a07aae70867de2ecdfbbde0e"

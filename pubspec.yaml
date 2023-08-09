@@ -51,6 +51,9 @@ dependencies:
   intl: 0.18.0
   flutter_localizations:
     sdk: flutter
+  firebase_dynamic_links: ^5.3.4
+  email_validator: ^2.1.17
+  firebase_ui_oauth: ^1.4.7
 
 
 flutter_launcher_icons:
