@@ -17,11 +17,13 @@ late final FirebaseApp app;
 late final FirebaseAuth auth;
 
 final actionCodeSettings = ActionCodeSettings(
-  url: 'https://flutterfire-e2e-tests.firebaseapp.com',
+  url: 'https://duraes.page.link/muUh',
   handleCodeInApp: true,
+  androidInstallApp: false,
+  //dynamicLinkDomain: "https://duraes.page.link/muUh",
   androidMinimumVersion: '1',
-  androidPackageName: 'io.flutter.plugins.firebase_ui.firebase_ui_example',
-  iOSBundleId: 'io.flutter.plugins.fireabaseUiExample',
+  androidPackageName: 'br.com.aceleradordeecommerce.duraes',
+  iOSBundleId: 'br.com.aceleradordeecommerce.duraes',
 );
 final emailLinkProviderConfig = EmailLinkAuthProvider(
   actionCodeSettings: actionCodeSettings,
