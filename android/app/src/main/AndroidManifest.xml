@@ -32,7 +32,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data
-                    android:host="duraes.page.link/muUh"
+                    android:host="duraes.page.link"
                     android:scheme="https"/>
             </intent-filter>
         </activity>
