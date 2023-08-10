@@ -165,13 +165,13 @@ class LabelOverrides extends DefaultLocalizations {
   String get referenceLabel => "referência";
 
   @override
-  String get registerActionText => "Inscrever-se";
+  String get registerActionText => "";
 
   @override
-  String get registerHintText => "Não tem uma conta?";
+  String get registerHintText => "";
 
   @override
-  String get registerText => "Inscrever-se";
+  String get registerText => "";
 
   @override
   String get resetPasswordButtonLabel => "Redefinir senha";
