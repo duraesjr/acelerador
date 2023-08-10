@@ -19,13 +19,16 @@ class FirebaseAuthUIExample extends StatelessWidget {
   String get initialRoute {
     final auth = FirebaseAuth.instance;
 
-    if (auth.currentUser == null) {
+    if  (auth.currentUser == null || auth.currentUser!.email != null) {
       return '/';
     }
 
+    //Desabilitada a verificacao de e-mail
+    /*
     if (!auth.currentUser!.emailVerified && auth.currentUser!.email != null) {
       return '/verify-email';
     }
+    */
 
     //return '/profile';
     return '/powerbi';
@@ -101,12 +104,16 @@ class FirebaseAuthUIExample extends StatelessWidget {
                 Navigator.pushNamed(context, '/phone');
               }),
               AuthStateChangeAction<SignedIn>((context, state) {
+                /*
                 if (!state.user!.emailVerified) {
                   Navigator.pushNamed(context, '/verify-email');
                 } else {
                   //Navigator.pushReplacementNamed(context, '/profile');
                   Navigator.pushReplacementNamed(context, '/powerbi');
                 }
+                */
+                //Regra de negocio. Desabilitando a verificacao de e-mail.
+                Navigator.pushReplacementNamed(context, '/powerbi');
               }),
               AuthStateChangeAction<UserCreated>((context, state) {
                 if (!state.credential.user!.emailVerified) {
@@ -288,11 +295,15 @@ class FirebaseAuthUIExample extends StatelessWidget {
                 Navigator.pushNamed(context, '/phone');
               }),
               AuthStateChangeAction<SignedIn>((context, state) {
+                /*
                 if (!state.user!.emailVerified) {
                   Navigator.pushNamed(context, '/verify-email');
                 } else {
                   Navigator.pushReplacementNamed(context, '/powerbi');
                 }
+                */
+                //Regra de negocio. Desabilitando a verificacao de e-mail.
+                Navigator.pushReplacementNamed(context, '/powerbi');
               }),
               AuthStateChangeAction<UserCreated>((context, state) {
                 if (!state.credential.user!.emailVerified) {
