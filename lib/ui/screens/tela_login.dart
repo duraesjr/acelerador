@@ -71,13 +71,13 @@ class FirebaseAuthUIExample extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch().copyWith(
-          //brightness: Brightness.dark,
+          //brightness: Brightness.light,
           onSurfaceVariant: Colors.white70,
           onSurface: Colors.white70,
           primary: Colors.white70,
           secondary: Colors.white70,
           tertiary: Colors.white70,
-          background: Color.fromRGBO(23, 86, 156, 0.5)
+          background: Color.fromRGBO(23, 86, 156, 0.8)
         ),
         visualDensity: VisualDensity.standard,
         useMaterial3: true,
