@@ -37,18 +37,6 @@ class FirebaseAuthUIExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final buttonStyle = ButtonStyle(
-      backgroundColor: MaterialStateColor.resolveWith((states) => Colors.white70),
-      foregroundColor: MaterialStateColor.resolveWith((states) => Color(0xFF01579B)),
-      //foregroundColor: MaterialStateColor.resolveWith((states) => Color.fromRGBO(23, 86, 156, 0.5)),
-      padding: MaterialStateProperty.all(const EdgeInsets.all(12)),
-      shape: MaterialStateProperty.all(
-        RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-      ),
-    );
-
-    final buttonStyle2 = ButtonStyle(
-      backgroundColor: MaterialStateColor.resolveWith((states) => Color.fromRGBO(23, 86, 156, 0.0)),
-      foregroundColor: MaterialStateColor.resolveWith((states) => Colors.white70),
       padding: MaterialStateProperty.all(const EdgeInsets.all(12)),
       shape: MaterialStateProperty.all(
         RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
@@ -70,22 +58,14 @@ class FirebaseAuthUIExample extends StatelessWidget {
 
     return MaterialApp(
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch().copyWith(
-          //brightness: Brightness.light,
-          onSurfaceVariant: Colors.white70,
-          onSurface: Colors.white70,
-          primary: Colors.white70,
-          secondary: Colors.white70,
-          tertiary: Colors.white70,
-          background: Color.fromRGBO(23, 86, 156, 0.8)
-        ),
+        brightness: Brightness.light,
         visualDensity: VisualDensity.standard,
         useMaterial3: true,
         inputDecorationTheme: const InputDecorationTheme(
           border: OutlineInputBorder(),
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(style: buttonStyle),
-        textButtonTheme: TextButtonThemeData(style: buttonStyle2),
+        textButtonTheme: TextButtonThemeData(style: buttonStyle),
         outlinedButtonTheme: OutlinedButtonThemeData(style: buttonStyle),
       ),
       initialRoute: initialRoute,
@@ -137,12 +117,12 @@ class FirebaseAuthUIExample extends StatelessWidget {
             styles: const {
               EmailFormStyle(signInButtonVariant: ButtonVariant.filled),
             },
-            headerBuilder: headerImage('assets/images/logo_fundo_transparente.png'),
-            sideBuilder: sideImage('assets/images/logo_fundo_transparente.png'),
+            headerBuilder: headerImage('assets/images/LOGO-ECOMSMART-FUNDO-BRANCO-fundotransparente_letra_preta.png'),
+            sideBuilder: sideImage('assets/images/LOGO-ECOMSMART-FUNDO-BRANCO-fundotransparente_letra_preta.png'),
             subtitleBuilder: (context, action) {
               return Padding(
                 padding: const EdgeInsets.only(bottom: 8),
-                child: Text(style: TextStyle(color: Colors.white70),
+                child: Text(
                   action == AuthAction.signIn
                       ? 'Bem vindo ao Acelerador de Ecommerce!'
                       : 'Bem vindo ao Acelerador de Ecommerce! Por favor, crie um conta para continuar.',
@@ -327,12 +307,12 @@ class FirebaseAuthUIExample extends StatelessWidget {
             styles: const {
               EmailFormStyle(signInButtonVariant: ButtonVariant.filled),
             },
-            headerBuilder: headerImage('assets/images/logo_fundo_transparente.png'),
-            sideBuilder: sideImage('assets/images/logo_fundo_transparente.png'),
+            headerBuilder: headerImage('assets/images/LOGO-ECOMSMART-FUNDO-BRANCO-fundotransparente_letra_preta.png'),
+            sideBuilder: sideImage('assets/images/LOGO-ECOMSMART-FUNDO-BRANCO-fundotransparente_letra_preta.png'),
             subtitleBuilder: (context, action) {
               return Padding(
                 padding: const EdgeInsets.only(bottom: 8),
-                child: Text(style: TextStyle(color: Colors.white70),
+                child: Text(
                   action == AuthAction.signIn
                       ? 'Bem vindo ao Acelerador de Ecommerce!'
                       : 'Bem vindo ao Acelerador de Ecommerce! Por favor, crie um conta para continuar.',

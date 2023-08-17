@@ -94,6 +94,8 @@ flutter:
      - assets/images/image_launcher_fundo_totalmente_branco.png
      - assets/images/image_launcher_escuro.png
      - assets/images/logo_fundo_transparente.png
+     - assets/images/LOGO-ECOMSMART-BRANCA-FUNDOTRANSPARENTE.png
+     - assets/images/LOGO-ECOMSMART-FUNDO-BRANCO-fundotransparente_letra_preta.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
