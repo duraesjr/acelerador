@@ -40,12 +40,15 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
   }
   @override
   void dispose() {
+    /*
+    //deslogando o usuário
     FirebaseAuth.instance.authStateChanges().listen((User? user) async {
       if (user != null) {
         debugPrint('Deslogando o usuário');
         FirebaseAuth.instance.signOut();
       }
     });
+    */
     super.dispose();
   }
 
