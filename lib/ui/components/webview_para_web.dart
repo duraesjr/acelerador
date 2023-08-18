@@ -23,8 +23,16 @@ class WebViewWeb extends StatefulWidget {
 class WebViewWebState extends State<WebViewWeb> {
   String _urlLogin = Config.urlLogin;
 
+  // #docregion platform_features
+  late final PlatformWebViewControllerCreationParams _params;
+
   @override
   void initState() {
+    super.initState();
+
+    _params = const PlatformWebViewControllerCreationParams();
+
+    //Emails vindos do firebase
     if (Config.emailEstaNaLista(Config.emailUsuarioLogado) == false) {
       Fluttertoast.showToast(
           msg:
@@ -38,7 +46,6 @@ class WebViewWebState extends State<WebViewWeb> {
     }
 
     _urlLogin = Config.getUrlDoUsuario();
-    super.initState();
   }
 
   final PlatformWebViewController _controller = PlatformWebViewController(
@@ -55,12 +62,14 @@ class WebViewWebState extends State<WebViewWeb> {
       uri: Uri.parse(_urlLogin),
     ),);
     return Scaffold(
+      /* Webview sem barra AppBar
       appBar: AppBar(
         title: const Text(''),
         actions: <Widget>[
           _SampleMenu(_controller),
         ],
       ),
+      */
       body: PlatformWebViewWidget(
         PlatformWebViewWidgetCreationParams(controller: _controller),
       ).build(context),
