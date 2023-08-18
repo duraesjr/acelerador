@@ -124,8 +124,8 @@ class FirebaseAuthUIExample extends StatelessWidget {
                 padding: const EdgeInsets.only(bottom: 8),
                 child: Text(
                   action == AuthAction.signIn
-                      ? 'Bem vindo ao Acelerador de Ecommerce!'
-                      : 'Bem vindo ao Acelerador de Ecommerce! Por favor, crie um conta para continuar.',
+                      ? 'Bem vindo ao ECOMSMART!'
+                      : 'Bem vindo ao ECOMSMART! Por favor, crie um conta para continuar.',
                 ),
               );
             },
@@ -314,8 +314,8 @@ class FirebaseAuthUIExample extends StatelessWidget {
                 padding: const EdgeInsets.only(bottom: 8),
                 child: Text(
                   action == AuthAction.signIn
-                      ? 'Bem vindo ao Acelerador de Ecommerce!'
-                      : 'Bem vindo ao Acelerador de Ecommerce! Por favor, crie um conta para continuar.',
+                      ? 'Bem vindo ao ECOMSMART!'
+                      : 'Bem vindo ao ECOMSMART! Por favor, crie um conta para continuar.',
                 ),
               );
             },
