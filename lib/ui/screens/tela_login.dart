@@ -117,8 +117,8 @@ class FirebaseAuthUIExample extends StatelessWidget {
             styles: const {
               EmailFormStyle(signInButtonVariant: ButtonVariant.filled),
             },
-            headerBuilder: headerImage('assets/images/LOGO-ECOMSMART-FUNDO-BRANCO-fundotransparente_letra_preta.png'),
-            sideBuilder: sideImage('assets/images/LOGO-ECOMSMART-FUNDO-BRANCO-fundotransparente_letra_preta.png'),
+            headerBuilder: headerImage('assets/images/LOGO-ECOMSMART-SEMFUNDO-PRETA.png'),
+            sideBuilder: sideImage('assets/images/LOGO-ECOMSMART-SEMFUNDO-PRETA.png'),
             subtitleBuilder: (context, action) {
               return Padding(
                 padding: const EdgeInsets.only(bottom: 8),
@@ -307,8 +307,8 @@ class FirebaseAuthUIExample extends StatelessWidget {
             styles: const {
               EmailFormStyle(signInButtonVariant: ButtonVariant.filled),
             },
-            headerBuilder: headerImage('assets/images/LOGO-ECOMSMART-FUNDO-BRANCO-fundotransparente_letra_preta.png'),
-            sideBuilder: sideImage('assets/images/LOGO-ECOMSMART-FUNDO-BRANCO-fundotransparente_letra_preta.png'),
+            headerBuilder: headerImage('assets/images/LOGO-ECOMSMART-SEMFUNDO-PRETA.png'),
+            sideBuilder: sideImage('assets/images/LOGO-ECOMSMART-SEMFUNDO-PRETA.png'),
             subtitleBuilder: (context, action) {
               return Padding(
                 padding: const EdgeInsets.only(bottom: 8),
