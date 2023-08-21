@@ -1,3 +1,4 @@
+import 'package:duraes/config/config.dart';
 import 'package:duraes/ui/screens/tela_login.dart';
 import 'package:duraes/ui/screens/tela_principal.dart';
 import 'package:firebase_auth/firebase_auth.dart'
@@ -7,7 +8,6 @@ import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:duraes/config/config.dart';
 
 import 'firebase_options.dart';
 
@@ -88,7 +88,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: const TelaPrincipal(title: ''),
+      home: const TelaPrincipal(title: ' '),
     );
   }
 }
