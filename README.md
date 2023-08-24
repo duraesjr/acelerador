@@ -25,7 +25,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Como compilar para Android?
 
-- 1) Acessar a branch versao_apk. ``git checkout versao_apk``
+- 1) Acessar a branch versao_apk. ``git checkout ecomsmart_app``
 - 2) Limpar o projeto com o comando ``flutter clean``.
 - 3) Baixar as dependências com o comando ``flutter pub get``.
 - 4) Compilar usando flutter build apk para gerar um arquivo apk em ``build\app\outputs\flutter-apk\app-release.apk.``
@@ -35,7 +35,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Como compilar para Web?
 
-- 1) Acessar a branch versao_web. ``git checkout versao_web``
+- 1) Acessar a branch versao_web. ``git checkout ecomsmart_web``
 - 2) Limpar o projeto com o comando ``flutter clean``.
 - 3) Baixar as dependências com o comando ``flutter pub get``.
 - 4) Compilar usando o comando ``flutter build web``. A compilação é gerada  no diretório build/web
